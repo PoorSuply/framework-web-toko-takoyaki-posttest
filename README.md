@@ -322,4 +322,4 @@ Berisi testimoni dari para pelanggan yang sudah pernah merasakan produk takoyaki
 ```
 ## Screenshot tampilan about.html
 
-![Alt text](./static/takoyaki/img/about.jpg)
+![Alt text](static/takoyaki/img/about.jpg)
