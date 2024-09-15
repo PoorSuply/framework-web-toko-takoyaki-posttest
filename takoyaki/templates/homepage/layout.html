@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    {% load django_bootstrap5 %} {% bootstrap_css %}
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'takoyaki/img/logo.png' %}" alt="Navbar Logo" style="height: 40px; width: 50px; margin-left: 10px;" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 20px;" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      {% block content %}
+
+      {% endblock %}
+      <footer class="footer text-white py-4 mt-5">
+        <div class="container">
+          <div class="row">
+            <!-- Kontak -->
+            <div class="col-md-4">
+              <h5>Kontak Kami</h5>
+              <p>
+                Email: <a href="mailto:info@takoyakistore.com" class="text-white">info@takoyakistore.com</a>
+              </p>
+              <p>
+                No. HP: <a href="tel:+628123456789" class="text-white">+62 812 3456 789</a>
+              </p>
+            </div>
+
+            <!-- Lokasi Toko -->
+            <div class="col-md-4">
+              <h5>Lokasi Toko</h5>
+              <p>Jalan Takoyaki No. 88, Samarinda</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4">
+              <h5>Ikuti Kami</h5>
+              <a href="https://www.facebook.com" class="me-3" target="_blank"><img src="/static/takoyaki/img/facebook.png" alt="Facebook" style="width: 24px; height: 24px;" /></a>
+              <a href="https://www.twitter.com" class="me-3" target="_blank"><img src="/static/takoyaki/img/twitter.png" alt="Twitter" style="width: 24px; height: 24px;" /></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="/static/takoyaki/img/instagram.png" alt="Instagram" style="width: 24px; height: 24px;" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    </div>
+
+    {% bootstrap_javascript %}
+  </body>
+</html>
