@@ -238,7 +238,7 @@ Didalam index.html terdapat 2 section. yaitu takoyaki-section dan menu-section. 
 
 ## Screenshot tampilan index.html
 
-![Alt text](./static/takoyaki/img/home.jpg)
+![Alt text](takoyaki/static/takoyaki/img/home.jpg)
 
 ## 3. Halaman about.html
 
