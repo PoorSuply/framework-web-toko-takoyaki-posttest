@@ -1,0 +1,107 @@
+{% extends 'homepage/layout.html' %}
+{% load static %}
+{% block title %}
+  Home
+{% endblock %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'takoyaki/css/style.css' %}" />
+
+ <!-- Section 1: Slogan -->
+  <section class="takoyaki-section">
+    <div class="takoyaki-text">
+      <h2>Rasakan Kelezatan Takoyaki Kami yang Unik!</h2>
+      <p>Nikmati takoyaki kami yang disajikan dengan saus spesial dan topping berlimpah, menawarkan kombinasi rasa yang tak tertandingi. Setiap gigitan menghadirkan kelezatan adonan takoyaki yang lembut dengan saus kental dan berbagai topping berkualitas.</p>
+      <p>
+        Temukan varian takoyaki favorit Anda dan rasakan pengalaman kuliner yang memuaskan. Kunjungi kami di <strong>Jalan Takoyaki No. 88, Samarinda</strong> atau pesan secara online untuk menikmati kelezatan kami kapan saja.
+      </p>
+    </div>
+  </section>
+
+<!-- Section 2: Daftar Menu -->
+  <section class="menu-section">
+    <h2 class="text-center">MENU KAMI</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-around">
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/original.jpg' %}" class="custom-carousel-image" alt="Honey Cake - 10th Anniversary" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Original</h5>
+                <p>Rp 25,000</p>
+              </div>
+            </div>
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/spicy.jpg' %}" class="custom-carousel-image" alt="Chocolate Salted Caramel Fudge - 10th Anniversary" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Pedas</h5>
+                <p>Rp 27,000</p>
+              </div>
+            </div>
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/special.jpg' %}" class="custom-carousel-image" alt="Super Banana - 10th Anniversary" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Spesial</h5>
+                <p>Rp 40,000</p>
+              </div>
+            </div>
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/mayo.jpg' %}" class="custom-carousel-image" alt="Key Lime Pie Special - 10th Anniversary" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Mayonaise</h5>
+                <p>Rp 30,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-around">
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/Gurita.jpg' %}" class="custom-carousel-image" alt="Takoyaki Cumi" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Gurita</h5>
+                <p>Rp 35,000</p>
+              </div>
+            </div>
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/sosis.jpg' %}" class="custom-carousel-image" alt="Takoyaki Pedas" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Sosis</h5>
+                <p>Rp 28,000.000</p>
+              </div>
+            </div>
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/keju.jpg' %}" class="custom-carousel-image" alt="Takoyaki Keju" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Keju</h5>
+                <p>Rp 32,000</p>
+              </div>
+            </div>
+            <div class="carousel-image-container text-center">
+              <img src="{% static 'takoyaki/img/udang.jpg' %}" class="custom-carousel-image" alt="Takoyaki Udang" />
+              <div class="carousel-caption">
+                <h5>Takoyaki Udang</h5>
+                <p>Rp 34,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Button Beli Section -->
+  <div class="text-center mt-4">
+    <button class="btn-beli">Beli</button>
+  </div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'homepage/layout.html' %}
+{% load static %}
+{% block title %}
+  About US
+{% endblock %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'takoyaki/css/about.css' %}" />
+
+  <!-- Section 1: Tentang Toko Takoyaki -->
+  <section class="about-section bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Tentang Toko Takoyaki Kami</h2>
+      <p>Toko takoyaki kami berdiri sejak tahun 2022, didirikan dengan tujuan untuk memberikan pengalaman kuliner Jepang yang otentik kepada semua orang. Kami menggunakan bahan-bahan berkualitas tinggi dan resep tradisional Jepang untuk menghadirkan rasa takoyaki yang asli.</p>
+      <p>Setiap bola takoyaki dibuat dengan hati-hati oleh koki berpengalaman yang terlatih dalam teknik pembuatan takoyaki terbaik.</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Keunggulan Kami -->
+  <section class="about-section py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Keunggulan Kami</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{% static 'takoyaki/img/segar.jpg' %}" alt="Bahan Segar" class="img-fluid rounded mb-3" />
+          <h4>Bahan Segar</h4>
+          <p>Kami hanya menggunakan bahan-bahan segar dan berkualitas tinggi untuk setiap porsi takoyaki yang kami buat.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'takoyaki/img/jepang.jpg' %}" alt="Rasa Otentik" class="img-fluid rounded mb-3" />
+          <h4>Rasa Otentik</h4>
+          <p>Resep kami adalah resep asli Jepang yang memberikan cita rasa takoyaki otentik dengan saus khas yang lezat.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'takoyaki/img/best-service.jpg' %}" alt="Layanan Terbaik" class="img-fluid rounded mb-3" />
+          <h4>Layanan Terbaik</h4>
+          <p>Kami berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan, dengan fokus pada kualitas dan kepuasan pelanggan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Testimoni Pelanggan -->
+  <section class="about-section bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Apa Kata Pelanggan Kami?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Takoyaki terenak yang pernah saya coba, rasanya benar-benar otentik!"</p>
+            <footer class="blockquote-footer">Budi, Pelanggan Tetap</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Pelayanan yang ramah dan cepat, takoyaki mereka selalu disajikan segar."</p>
+            <footer class="blockquote-footer">Sinta, Pecinta Takoyaki</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Tempat yang sempurna untuk menikmati takoyaki bersama keluarga"</p>
+            <footer class="blockquote-footer">Rahmat, Pelanggan Baru</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
