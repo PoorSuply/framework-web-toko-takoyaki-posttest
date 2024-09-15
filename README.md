@@ -236,6 +236,10 @@ Selain berisi navbar, layout.html juga berisi footer yang mengandung informasi t
 
 Didalam index.html terdapat 2 section. yaitu takoyaki-section dan menu-section. takoyaki-section berupa latar belakang dalam bentuk foto yang didepannya berisi teks berupa slogan promosi dari toko. Sedangkan menu-section berisi carousel yang menampilkan beberapa menu yang disedikan toko tersebut dan tombol beli yang nanti nya akan mengarahkan ke halaman menu.
 
+## Screenshot tampilan index.html
+
+![Alt text](./static/takoyaki/img/home.jpg)
+
 ## 3. Halaman about.html
 
 Halaman about.html berisi 3 section, yaitu tentang kami, keunggulan, dan testimoni pelanggan.
@@ -316,3 +320,6 @@ Berisi testimoni dari para pelanggan yang sudah pernah merasakan produk takoyaki
     </div>
   </section>
 ```
+## Screenshot tampilan about.html
+
+![Alt text](./static/takoyaki/img/about.jpg)
