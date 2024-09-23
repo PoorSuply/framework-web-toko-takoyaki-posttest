@@ -1,6 +1,6 @@
 # Framework Website Toko Takoyaki 
 
-## NAMA: Alianur
+## NAMA : Alianur
 
 ## NIM : 2209106025
 
