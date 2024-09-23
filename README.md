@@ -238,7 +238,7 @@ Didalam index.html terdapat 2 section. yaitu takoyaki-section dan menu-section. 
 
 ## Screenshot tampilan index.html
 
-![Alt text](./static/takoyaki/img/home.jpg)
+![Alt text](takoyaki/static/takoyaki/img/home.jpg)
 
 ## 3. Halaman about.html
 
@@ -322,4 +322,4 @@ Berisi testimoni dari para pelanggan yang sudah pernah merasakan produk takoyaki
 ```
 ## Screenshot tampilan about.html
 
-![Alt text](./static/takoyaki/img/about.jpg)
+![Alt text](takoyaki/static/takoyaki/img/about.jpg)
