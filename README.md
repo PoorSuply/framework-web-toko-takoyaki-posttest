@@ -31,3 +31,53 @@
 4. Table Order
    
 ![Cuplikan layar 2024-09-23 142749](https://github.com/user-attachments/assets/5611598d-9741-4684-999c-7cd93cb6719b)
+
+5. Tabel OrderHistory
+
+![Cuplikan layar 2024-10-01 150623](https://github.com/user-attachments/assets/1681fad9-d460-488f-9bca-0e7ed41eff36)
+
+### Posttest 3
+
+1. Screenshot Form dan Tabel
+
+   #### Tabel Users
+   ![user](https://github.com/user-attachments/assets/516e5394-bfa9-446e-8fe1-72060f32ac57)
+
+   #### Tabel TakoyakiMenu
+   ![menu](https://github.com/user-attachments/assets/cd01e3bb-013c-4e5b-92b8-f1a89eab5213)
+
+   #### Tabel Order
+   ![order](https://github.com/user-attachments/assets/0da7bbd3-26f8-441c-8fd7-bc275e320cdb)
+
+   #### Tabel OrderHistory
+   ![history](https://github.com/user-attachments/assets/d0fb6fc2-4ccf-4836-89cc-cfe1bded5407)
+
+2. Function Custom
+   
+   Aksi atau fungsi yang saya gunakan yaitu, ketika melakukan order maka akan otomatis membuat orderhistory
+   
+   ![Cuplikan layar 2024-10-01 162423](https://github.com/user-attachments/assets/0e9a99b7-1c5d-4933-9a87-47dbfdc58238)
+
+3. Static File
+   1. index.html
+      - takoyaki/img/original.jpg
+      - takoyaki/img/spicy.jpg
+      - takoyaki/img/special.jpg
+      - takoyaki/img/mayo.jpg
+      - takoyaki/img/Gurita.jpg
+      - takoyaki/img/sosis.jpg
+      - takoyaki/img/keju.jpg
+      - takoyaki/img/udang.jpg
+   3. about.html
+      - takoyaki/img/segar.jpg
+      - takoyaki/img/jepang.jpg
+      - takoyaki/img/service.jpg
+   5. layout.html
+      - takoyaki/img/logo.png
+      - /static/takoyaki/img/facebook.png
+      - /static/takoyaki/img/twitter.png
+      - /static/takoyaki/img/instagram.png
+   
+
+
+   
