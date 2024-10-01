@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator
 from .menu import TakoyakiMenu
 from django.conf import settings
+from django.apps import apps
 
 class Order(models.Model):
     customer = models.ForeignKey(
@@ -16,3 +17,13 @@ class Order(models.Model):
 
     def __str__(self):
         return f'Order by {self.customer.username} for {self.quantity} x {self.takoyaki.item_name}'
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        
+        OrderHistory = apps.get_model('takoyaki', 'OrderHistory')
+
+        OrderHistory.objects.create(
+            order=self,
+            action=f"Order {self.id} created/updated for {self.quantity} x {self.takoyaki.item_name}"
+        )
