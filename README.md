@@ -86,22 +86,23 @@
    After
    
 2. Read
-   ![Uploading Screenshot_16-10-2024_194136_127.0.0.1.jpeg…]()
+
+
 
 3. Update
-   ![Uploading Screenshot_16-10-2024_194310_127.0.0.1.jpeg…]()
+
 
    After
-   ![Uploading Screenshot_16-10-2024_194520_127.0.0.1.jpeg…]()
+
 
 4. Delete
-   ![Uploading Screenshot_16-10-2024_194541_127.0.0.1.jpeg…]()
+
 
    After
-   ![Uploading Screenshot_16-10-2024_194555_127.0.0.1.jpeg…]()
+
    
 5. Search
-   2024-10-16 19:26:25.330 [info] > git ls-files --stage -- C:\Framework\posttest\takoyaki\templates\menu\form.html [119ms]
+
 
 
 
