@@ -80,6 +80,8 @@
 
 ### Posttest 4
 
+Nggak bisa upload foto lagi bang. muter2, jadi saya pindahin foto nya di folder Foto CRUD
+
 1. Create
    
    
