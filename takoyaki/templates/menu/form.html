@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'takoyaki/css/style.css' %}" />
+<div class="mb-3">
+    <label for="id_item_name" class="form-label">Nama Item</label>
+    {{ form.item_name }}
+</div>
+<div class="mb-3">
+    <label for="id_price" class="form-label">Harga</label>
+    {{ form.price }}
+</div>
+<div class="mb-3">
+    <label for="id_description" class="form-label">Deskripsi</label>
+    {{ form.description }}
+</div>
+<div class="mb-3">
+    <label for="id_is_available" class="form-label">Tersedia</label>
+    {{ form.is_available }}
+</div>
+<button type="submit" class="btn btn-primary">Simpan</button>
