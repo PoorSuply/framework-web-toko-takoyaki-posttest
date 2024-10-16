@@ -1,0 +1,92 @@
+{% extends 'homepage/layout.html' %}
+{% load static %}
+
+{% block title %} Daftar Menu Takoyaki {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'takoyaki/css/style.css' %}" />
+
+<div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <h1>Daftar Menu Takoyaki</h1>
+        <a href="{% url 'menu_create' %}" class="btn btn-primary">Tambah Menu</a>
+    </div>
+
+    <form method="GET" action="{% url 'menu_index' %}" class="d-flex mb-3">
+        <input class="form-control me-2" type="search" name="q" placeholder="Cari menu..." value="{{ query|default:'' }}" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Cari</button>
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nama Item</th>
+                <th>Harga</th>
+                <th>Deskripsi</th>
+                <th>Tersedia</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for menu in menus %}
+            <tr>
+                <td>{{ menu.item_name }}</td>
+                <td>{{ menu.price }}</td>
+                <td>{{ menu.description }}</td>
+                <td>{{ menu.is_available|yesno:"Ya,Tidak" }}</td>
+                <td>
+                    <a href="{% url 'menu_update' menu.id %}" class="btn btn-sm btn-warning">Ubah</a>
+                    <button class="btn btn-sm btn-danger" onclick="confirmDelete({{ menu.id }})">Hapus</button>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="5" class="text-center">Tidak ada menu tersedia</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- SweetAlert Script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+function confirmDelete(menuId) {
+    Swal.fire({
+        title: 'Anda yakin ingin menghapus menu ini?',
+        text: 'Data tidak akan bisa dikembalikan!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            fetch(`/menu/delete/${menuId}/`, {  // Pastikan ada trailing slash
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Menu telah dihapus.',
+                        'success'
+                    ).then(() => {
+                        window.location.reload();
+                    });
+                } else {
+                    Swal.fire(
+                        'Error!',
+                        'Terjadi kesalahan saat menghapus menu.',
+                        'error'
+                    );
+                }
+            });
+        }
+    });
+}
+</script>
+
+{% endblock %}

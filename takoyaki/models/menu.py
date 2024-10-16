@@ -4,7 +4,7 @@ from django.core.validators import MinValueValidator
 class TakoyakiMenu(models.Model):
     item_name = models.CharField(max_length=100)
     price = models.DecimalField(
-        max_digits=6,
+        max_digits=10,
         decimal_places=2,
         validators=[MinValueValidator(1.000)]
     )
