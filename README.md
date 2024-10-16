@@ -80,30 +80,31 @@
 
 ### Posttest 4
 
-Nggak bisa upload foto lagi bang. muter2, jadi saya pindahin foto nya di folder Foto CRUD
-
 1. Create
-   
-   
+   ![Create](https://github.com/user-attachments/assets/4aa5cee0-aaeb-4e3a-a2a3-5a2486b0d905)
+
    After
-   
+   ![After Create](https://github.com/user-attachments/assets/1f48ca53-342e-48c0-bb5c-e4a0718f1bd2)
+
 2. Read
-
-
+   ![Read](https://github.com/user-attachments/assets/989721ed-a30e-4782-8e55-0b81b3ec876a)
 
 3. Update
 
+   ![Update](https://github.com/user-attachments/assets/ebb572d2-d63b-4bdf-bd01-db7e6d514487)
 
    After
-
+   ![After Update](https://github.com/user-attachments/assets/aa811747-bbdc-4e06-a09c-1be62379ebb1)
 
 4. Delete
-
-
+   
+   ![Delete](https://github.com/user-attachments/assets/9a3546f6-5c6f-40a7-a088-51a02d944ab6)
    After
 
-   
+   ![After Delete](https://github.com/user-attachments/assets/7b36db2f-8173-4958-aef3-b94657b0f175)
+
 5. Search
+   ![Search](https://github.com/user-attachments/assets/01285975-755f-4288-91df-c4d55a311df2)
 
 
 
